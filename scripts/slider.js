@@ -5,12 +5,14 @@ let btnNext = document.getElementById('nextImg');
 let slideImg = document.getElementById('slide');
 let currentImg = 0;
 
-// 
+// Event onclick - open previous slide
 btnPrevious.addEventListener('click', () => {
     currentImg -= 1;
     if(currentImg < 0){
         currentImg = images.length - 1
     }
+
+    // animation
     slideImg.style.opacity = 0;
     setTimeout(() => {
         slideImg.src = images[currentImg];
@@ -18,6 +20,7 @@ btnPrevious.addEventListener('click', () => {
     }, 300);
 })
 
+// Event onclick - open next slide
 btnNext.addEventListener('click', nextSlide);
 
 // Here you can see a function, because I use it in interval
@@ -26,6 +29,8 @@ function nextSlide(){
     if(currentImg > (images.length - 1)){
         currentImg = 0
     }
+
+    // animation
     slideImg.style.opacity = 0;
     setTimeout(() => {
         slideImg.src = images[currentImg];
