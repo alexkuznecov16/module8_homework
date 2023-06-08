@@ -1,9 +1,14 @@
+// Array with images links
 let images = ['img/slide1.jpg', 'img/slide2.jpg', 'img/slide3.jpg', 'img/slide4.jpg'];
 
+// buttons vars
 let btnPrevious = document.getElementById('prevImg');
 let btnNext = document.getElementById('nextImg');
+
+// slide vars
 let slideImg = document.getElementById('slide');
 let currentImg = 0;
+
 
 // Event onclick - open previous slide
 btnPrevious.addEventListener('click', () => {
