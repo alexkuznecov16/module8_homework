@@ -44,4 +44,4 @@ function nextSlide(){
 }
 
 
-setInterval(nextSlide , 5000); // After 5 seconds we will see next slide
+setInterval(nextSlide , 5000); // Every 5 seconds will be next slide
